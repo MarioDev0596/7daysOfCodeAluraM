@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #1E201E;
+    font-family: "Work Sans", sans-serif;
+    color: #F7EFE5;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: #FF9100;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    display: inline;
+    vertical-align: middle;
+}
+
+header img {
+    max-width: 150px; /* Tamaño máximo para la imagen en el header */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 10px; /* Espacio entre el título y la imagen */
+    vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header img {
+    max-width: 150px; /* Tamaño máximo para pantallas grandes */
+}
+
+.img-dia1 {
+    width: 100%; /* Hace que la imagen se ajuste al ancho de su contenedor */
+    max-width: 400px; /* Tamaño máximo para imágenes en pantallas grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+}
+
+.desafios {
+    border: 2px solid #FF9100; /* Cambia el color y el grosor del borde */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    padding: 15px; /* Opcional: agrega espacio dentro del borde */
+    margin-bottom: 20px; /* Espacio entre secciones */
+    box-shadow: 0 4px 8px #f3c703de; /* Opcional: agrega sombra al borde */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #FF9100;
+    border: none;
+    border-radius: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button svg {
+    margin-right: 0.5em;
+    transition: transform 0.3s;
+}
+
+button span {
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background: #FF6F00;
+    transform: scale(1.05);
+}
+
+button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+    transform: translateX(7px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header img {
+        max-width: 100px; /* Reduce el tamaño en pantallas medianas */
+    }
+
+    .img-dia1 {
+        max-width: 300px; /* Tamaño máximo para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 80px; /* Reduce aún más el tamaño en pantallas pequeñas */
+    }
+
+    .img-dia1 {
+        max-width: 200px; /* Tamaño máximo para pantallas pequeñas */
+    }
+}
